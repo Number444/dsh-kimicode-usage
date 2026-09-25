@@ -1,0 +1,7 @@
+# dsh-kimi-quota 双面包：host 半区提供 /dsh-kimi-quota/api 额度代理路由，
+# client 半区（lib/client.js）由 modules 节点按 package.json 的 dsh.client
+# 扫描进 web 插件名册，在设置页注册「Kimi Code 额度」区块。
+
+- insert:
+    - id: kimi-quota
+      name: 'dsh-kimi-quota'

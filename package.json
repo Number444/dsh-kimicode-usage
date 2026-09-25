@@ -1,0 +1,39 @@
+{
+  "name": "dsh-kimi-quota",
+  "version": "0.2.0",
+  "description": "Show Kimi Code quota in DeepSeek Harness: a settings section plus a compact composer badge (5h window / weekly)",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Number444/dsh-kimicode-usage.git"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "kimi",
+    "kimi-code",
+    "quota",
+    "usage"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}
