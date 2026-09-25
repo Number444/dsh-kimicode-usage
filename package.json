@@ -1,6 +1,6 @@
 {
   "name": "dsh-kimi-quota",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Show Kimi Code quota in DeepSeek Harness: a settings section plus a compact composer badge (5h window / weekly)",
   "type": "module",
   "main": "lib/index.js",
